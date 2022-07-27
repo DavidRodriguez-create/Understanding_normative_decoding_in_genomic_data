@@ -2,11 +2,13 @@
 
 go_to(){
 
-	file=$1;
-        if [[ $file == *"samtools-"* ]]
+	path=$1;
+        if [[ $path == *"samtools-"* ]]
         then
                 cd versions_samtools/;
-                cd ./$file;
+                cd ./$path;
+	else
+		cd $path;
         fi
 };
 
